@@ -11,9 +11,10 @@ namespace homework2{
                 if (IsValidSequence(halfDNASequence)) {
                     Console.WriteLine("Current half DNA sequence: " + halfDNASequence);
 
-                    Console.WriteLine("Do you want to replicate it? (Y/N): ");
+                    Console.Write("Do you want to replicate it? (Y/N): ");
                     char choice;
                     choice = Console.ReadKey().KeyChar;
+                    Console.WriteLine();
                    
                    while (choice != 'Y' && choice != 'N'){
                         choice = Console.ReadKey().KeyChar;
